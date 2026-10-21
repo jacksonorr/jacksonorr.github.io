@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jackson Orr | Project Management, Elon University</title>
+<meta name="description" content="Jackson Orr is a Presidential Scholar and Leadership Fellow at Elon University's Love School of Business, studying Business Administration with a concentration in Project Management and a minor in Leadership.">
+<meta name="author" content="Jackson Orr">
+<meta property="og:title" content="Jackson Orr | Project Management, Elon University">
+<meta property="og:description" content="Portfolio of Jackson Orr: education, experience, leadership, and service.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232468e0'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3EJO%3C/text%3E%3C/svg%3E">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: smart sticky nav (hides on scroll down, returns on scroll up), single column, sections reveal as they scroll in */
+:root {
+  --bg: #f4f8fe;
+  --surface: #ffffff;
+  --band: #e4eefc;
+  --ink: #12294a;
+  --muted: #4f6688;
+  --line: #cfdef3;
+  --accent: #2468e0;
+  --accent-2: #3fa2f0;
+  --accent-soft: #dce9fd;
+  --deep: #17428a;
+  --glow-a: rgba(63, 162, 240, 0.30);
+  --glow-b: rgba(36, 104, 224, 0.22);
+  --shadow: 0 8px 24px rgba(23, 66, 138, 0.10);
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --nav-h: 60px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1b30; --surface: #132541; --band: #102038; --ink: #e8f0fc; --muted: #9db1cf;
+    --line: #24406a; --accent: #6eaaf8; --accent-2: #7fd0ff; --accent-soft: #1b3561; --deep: #cfe2ff;
+    --glow-a: rgba(127, 208, 255, 0.16); --glow-b: rgba(110, 170, 248, 0.14); --shadow: 0 8px 24px rgba(0,0,0,.3); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1b30; --surface: #132541; --band: #102038; --ink: #e8f0fc; --muted: #9db1cf;
+  --line: #24406a; --accent: #6eaaf8; --accent-2: #7fd0ff; --accent-soft: #1b3561; --deep: #cfe2ff;
+  --glow-a: rgba(127, 208, 255, 0.16); --glow-b: rgba(110, 170, 248, 0.14); --shadow: 0 8px 24px rgba(0,0,0,.3); color-scheme: dark;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 12px); }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+
+.wrap { max-width: 880px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+
+/* Smart nav */
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--surface) 86%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .3s; }
+nav.hide { transform: translateY(calc(-100% - env(safe-area-inset-top, 0px))); }
+nav.raised { box-shadow: var(--shadow); }
+nav .wrap { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.progress { position: absolute; left: 0; bottom: -1px; height: 3px; width: 100%; transform-origin: left; transform: scaleX(0); background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.brand { font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--deep); text-decoration: none; letter-spacing: -0.01em; white-space: nowrap; }
+.brand .dot { color: var(--accent-2); }
+.links { position: relative; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.links::-webkit-scrollbar { display: none; }
+.links a { position: relative; z-index: 1; font-size: 0.9rem; font-weight: 500; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 999px; white-space: nowrap; transition: color .25s; }
+.links a:hover { color: var(--ink); }
+.links a.active { color: var(--accent); }
+.pill { position: absolute; top: 0; left: 0; height: 100%; border-radius: 999px; background: var(--accent-soft); opacity: 0; transition: transform .4s cubic-bezier(.2,.7,.2,1), width .4s cubic-bezier(.2,.7,.2,1), opacity .25s; }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Hero */
+header.hero { position: relative; padding-block: 80px 60px; overflow: hidden; }
+.glow { position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; z-index: 0; }
+.glow.a { width: 420px; height: 420px; background: var(--glow-a); top: -120px; right: -80px; animation: drift 14s ease-in-out infinite alternate; }
+.glow.b { width: 360px; height: 360px; background: var(--glow-b); bottom: -160px; left: -100px; animation: drift 18s ease-in-out infinite alternate-reverse; }
+@keyframes drift { to { transform: translate(-60px, 40px) scale(1.12); } }
+header.hero .wrap { position: relative; z-index: 1; }
+.eyebrow { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: 1.02; letter-spacing: -0.03em; margin: 14px 0 18px; text-wrap: balance;
+  background: linear-gradient(100deg, var(--deep) 30%, var(--accent) 70%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 58ch; margin: 0; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 26px; font-size: 0.95rem; }
+.hero-meta a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.hero-meta a:hover { text-decoration: underline; }
+.hero-meta span { color: var(--muted); }
+
+.impact { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 44px; }
+.impact div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.impact div:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--accent); }
+.impact b { display: block; font-family: var(--display); font-size: 1.9rem; font-weight: 700; color: var(--accent); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.impact b.word { font-size: 1.3rem; line-height: 1.2; padding-top: 4px; }
+.impact small { color: var(--muted); font-size: 0.85rem; line-height: 1.35; display: block; margin-top: 4px; }
+@media (max-width: 640px) { .impact { grid-template-columns: repeat(2, 1fr); } }
+
+/* Sections */
+section { padding-block: 60px; border-top: 1px solid var(--line); }
+section.alt { background: linear-gradient(180deg, var(--band), var(--bg)); }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 28px; color: var(--deep); }
+h2::after { content: ""; display: block; width: 44px; height: 4px; border-radius: 4px; margin-top: 10px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+
+.entry { display: grid; grid-template-columns: 170px 1fr; gap: 8px 28px; padding-block: 18px; }
+.entry + .entry { border-top: 1px dashed var(--line); }
+.when { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums; }
+.entry > div { min-width: 0; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 0; color: var(--ink); }
+.org { color: var(--accent); font-weight: 500; font-size: 0.95rem; margin: 2px 0 10px; }
+.org span { color: var(--muted); font-weight: 400; }
+ul { margin: 0; padding-left: 18px; color: var(--muted); }
+li { margin-bottom: 6px; max-width: 68ch; }
+li::marker { color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.tag { font-size: 0.82rem; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 500; transition: transform .2s; }
+.tag:hover { transform: translateY(-2px); }
+.gpa { font-family: var(--mono); font-size: 0.82rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); padding: 2px 8px; border-radius: 6px; margin-left: 6px; }
+
+.group { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px 22px; margin-top: 8px; box-shadow: var(--shadow); }
+.group-head { padding-top: 16px; font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--deep); }
+.group-head small { display: block; font-family: var(--body); font-weight: 400; font-size: 0.9rem; color: var(--muted); }
+
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.skills > div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+.skills h3 { font-size: 0.78rem; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; margin-bottom: 12px; }
+
+.contact p { color: var(--muted); max-width: 55ch; margin: 0 0 22px; }
+.contact-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px; font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface); cursor: pointer; font-family: inherit; transition: transform .2s, box-shadow .2s; }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn.primary { background: linear-gradient(100deg, var(--accent), var(--accent-2)); color: #fff; border-color: transparent; }
+
+footer { border-top: 1px solid var(--line); padding-block: 28px; text-align: center; color: var(--muted); font-size: 0.88rem; }
+
+/* Back to top */
+.top-btn { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); z-index: 6; width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; font-size: 1.2rem; box-shadow: var(--shadow); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .3s, transform .3s; }
+.top-btn.show { opacity: 1; transform: none; pointer-events: auto; }
+
+/* Scroll reveals: only elements below the fold at load are hidden, then they rise in when they scroll into view */
+.reveal.pending { opacity: 0; transform: translateY(48px) scale(.97); }
+.reveal { transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0ms); }
+.entry.reveal.pending { transform: translateX(-40px); }
+
+/* Hero entrance on load */
+@keyframes enter { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero .eyebrow, .hero h1, .hero .lede, .hero .hero-meta, .impact div { animation: enter .9s cubic-bezier(.2,.7,.2,1) both; }
+  .hero h1 { animation-delay: .1s; }
+  .hero .lede { animation-delay: .22s; }
+  .hero .hero-meta { animation-delay: .32s; }
+  .impact div:nth-child(1) { animation-delay: .42s; }
+  .impact div:nth-child(2) { animation-delay: .5s; }
+  .impact div:nth-child(3) { animation-delay: .58s; }
+  .impact div:nth-child(4) { animation-delay: .66s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .glow { animation: none; }
+  nav, .pill, .impact div, .btn, .tag, .top-btn { transition: none; }
+}
+
+@media (max-width: 640px) {
+  .entry { grid-template-columns: 1fr; gap: 2px; }
+  .skills { grid-template-columns: 1fr; }
+  .brand .full { display: none; }
+  header.hero { padding-block: 52px 44px; }
+  .group { padding: 4px 16px; }
+}
+</style>
+
+</head>
+<body>
+<nav aria-label="Main" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">J<span class="full">ackson</span> Orr<span class="dot">.</span></a>
+    <div class="links" id="links">
+      <span class="pill" id="pill"></span>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+</nav>
+
+<header class="hero" id="top">
+  <span class="glow a"></span><span class="glow b"></span>
+  <div class="wrap">
+    <div class="eyebrow">Project Management · Elon University</div>
+    <h1>Jackson Orr</h1>
+    <p class="lede">Business Administration student at Elon's Love School of Business, studying project management with a minor in leadership. I bring experience in event planning, volunteer coordination, and community service leadership, with a focus on organizing teams and delivering projects from planning through execution.</p>
+    <div class="hero-meta">
+      <a href="mailto:jorr7@elon.edu">jorr7@elon.edu</a>
+      <a href="https://www.linkedin.com/in/jacksonmorr/" target="_blank" rel="noopener">LinkedIn</a>
+      <span>Apex, NC</span>
+    </div>
+    <div class="impact">
+      <div><b class="word">Presidential Scholar</b><small>Merit scholarship recipient, Elon University</small></div>
+      <div><b class="word">Leadership Fellow</b><small>Selected for Elon University's prestigious Leadership Fellows program</small></div>
+      <div><b>300+</b><small>Youth participants served through programs organized as Youth Counselor Leader</small></div>
+      <div><b>2× President</b><small>Science National Honor Society and Unified Club, Middle Creek High School</small></div>
+    </div>
+  </div>
+</header>
+
+<section id="education" class="alt">
+  <div class="wrap">
+    <h2 class="reveal">Education</h2>
+    <div class="entry reveal">
+      <div class="when">Expected May 2030</div>
+      <div>
+        <h3>B.S. Business Administration, Project Management <span class="gpa">GPA 3.83</span></h3>
+        <p class="org">Elon University, Martha and Spencer Love School of Business <span>· Elon, NC</span></p>
+        <div class="tags"><span class="tag">Minor: Leadership</span><span class="tag">Presidential Scholar</span><span class="tag">Leadership Fellow</span></div>
+      </div>
+    </div>
+    <div class="entry reveal">
+      <div class="when">May 2026</div>
+      <div>
+        <h3>High School Diploma <span class="gpa">GPA 3.83</span></h3>
+        <p class="org">Middle Creek High School <span>· Cary, NC</span></p>
+        <div class="tags">
+          <span class="tag">President, Science National Honor Society</span>
+          <span class="tag">President, Unified Club</span>
+          <span class="tag">Mustang Award</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 class="reveal">Experience</h2>
+    <div class="entry reveal">
+      <div class="when">Aug 2025 – Apr 2026</div>
+      <div>
+        <h3>After-School Guidance Counselor</h3>
+        <p class="org">Dynamic Opportunities School <span>· Raleigh, NC</span></p>
+        <ul>
+          <li>Supervised and supported special needs students in an after-school program, keeping it safe, welcoming, and engaging.</li>
+          <li>Communicated with students, staff, and families to address student needs and keep the program positive.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry reveal">
+      <div class="when">Aug 2025 – May 2026</div>
+      <div>
+        <h3>Second Grade Science Instructor</h3>
+        <p class="org">Middle Creek High School <span>· Cary, NC</span></p>
+        <ul>
+          <li>Planned weekly hands-on science experiments for more than 100 second graders, coordinating materials, presentations, and interactive lessons.</li>
+          <li>Led a team of 15 high school volunteers, delegating responsibilities and coordinating instruction.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership" class="alt">
+  <div class="wrap">
+    <h2 class="reveal">Leadership &amp; Service</h2>
+    <div class="group reveal">
+      <div class="group-head">Apex United Methodist Church<small>Apex, NC · 2022 – 2026 · three roles</small></div>
+      <div class="entry">
+        <div class="when">May – Aug 2024</div>
+        <div>
+          <h3>Youth Program Intern</h3>
+          <ul>
+            <li>Planned, coordinated, and led community service events and mission projects for the largest youth program in North Carolina.</li>
+            <li>Built event logistics, managed volunteer schedules, and set goals and targets for every youth participant.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2023 – May 2026</div>
+        <div>
+          <h3>Youth Counselor Leader</h3>
+          <ul>
+            <li>Organized and facilitated events and programs for more than 300 participants, centered on fellowship and community engagement.</li>
+            <li>Mentored youth through weekly programs, creating an inclusive and positive environment.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jul 2022 – Jul 2026</div>
+        <div>
+          <h3>AOSP Student Leader</h3>
+          <ul>
+            <li>Co-led a week-long Apex Outreach Service Project, a long-standing initiative that has repaired more than 250 homes in the community.</li>
+            <li>Worked with student and adult volunteers on painting, flooring, siding, and ramp construction to make homes safer and more accessible for seniors and families.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="reveal">Skills &amp; Certifications</h2>
+    <div class="skills">
+      <div class="reveal">
+        <h3>Technical</h3>
+        <div class="tags">
+          <span class="tag">OSHA 30 Construction</span>
+          <span class="tag">Electrical Wiring Training</span>
+          <span class="tag">Entry-level Python</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3>Health &amp; Safety</h3>
+        <div class="tags">
+          <span class="tag">First Aid</span>
+          <span class="tag">CPR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <h2 class="reveal">Get in touch</h2>
+    <p class="reveal">I'm open to internships, project roles, and volunteer leadership opportunities. Email is the best way to reach me.</p>
+    <div class="contact-row reveal">
+      <button class="btn primary" id="copy-email" type="button">Copy email: jorr7@elon.edu</button>
+      <a class="btn" href="https://www.linkedin.com/in/jacksonmorr/" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Jackson Orr. All rights reserved.</div>
+</footer>
+
+<button class="top-btn" id="top-btn" type="button" aria-label="Back to top">↑</button>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const btn = document.getElementById('copy-email');
+btn.addEventListener('click', () => {
+  const label = btn.textContent;
+  const done = t => { btn.textContent = t; setTimeout(() => btn.textContent = label, 1800); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText('jorr7@elon.edu').then(() => done('Copied!'), () => done('jorr7@elon.edu'));
+  } else { done('jorr7@elon.edu'); }
+});
+
+const nav = document.getElementById('nav');
+const progress = document.getElementById('progress');
+const topBtn = document.getElementById('top-btn');
+const pill = document.getElementById('pill');
+const links = [...document.querySelectorAll('#links a')];
+const sections = links.map(a => document.querySelector(a.getAttribute('href')));
+let lastY = window.scrollY, active = -2, ticking = false;
+
+topBtn.addEventListener('click', () => window.scrollTo({ top: 0 }));
+links.forEach(a => a.addEventListener('click', () => nav.classList.remove('hide')));
+
+function movePill(i) {
+  if (i < 0) { pill.style.opacity = 0; return; }
+  const a = links[i];
+  pill.style.width = a.offsetWidth + 'px';
+  pill.style.transform = 'translateX(' + a.offsetLeft + 'px)';
+  pill.style.opacity = 1;
+  const box = a.parentElement;
+  if (a.offsetLeft < box.scrollLeft || a.offsetLeft + a.offsetWidth > box.scrollLeft + box.clientWidth) {
+    box.scrollTo({ left: a.offsetLeft - 20, behavior: 'smooth' });
+  }
+}
+
+function update() {
+  const y = window.scrollY;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+
+  // Smart nav: hide on scroll down, show on scroll up
+  if (y > 140 && y > lastY + 4) nav.classList.add('hide');
+  else if (y < lastY - 4 || y < 140) nav.classList.remove('hide');
+  nav.classList.toggle('raised', y > 10);
+  topBtn.classList.toggle('show', y > 600);
+  lastY = y;
+
+  let current = -1;
+  const probe = y + 140;
+  sections.forEach((s, i) => { if (s && s.offsetTop <= probe) current = i; });
+  if (y >= max - 4) current = sections.length - 1;
+  if (current !== active) {
+    active = current;
+    links.forEach((a, i) => a.classList.toggle('active', i === current));
+    movePill(current);
+  }
+  ticking = false;
+}
+window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+window.addEventListener('resize', () => movePill(active));
+update();
+
+// Reveal sections as they scroll into view
+(function () {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  const items = [...document.querySelectorAll('.reveal')];
+  // stagger siblings inside each section
+  document.querySelectorAll('section').forEach(sec => {
+    sec.querySelectorAll('.reveal').forEach((el, i) => el.style.setProperty('--d', Math.min(i, 4) * 90 + 'ms'));
+  });
+  const vh = window.innerHeight;
+  items.forEach(el => { if (el.getBoundingClientRect().top > vh * 0.92) el.classList.add('pending'); });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.remove('pending'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
+  items.forEach(el => { if (el.classList.contains('pending')) io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
